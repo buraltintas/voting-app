@@ -23,7 +23,6 @@ const ViewVoting = () => {
   const { id } = router.query;
 
   if (typeof window !== 'undefined') {
-    // Perform localStorage action
     voted = JSON.parse(localStorage.getItem('voted'));
   }
 
@@ -150,7 +149,7 @@ const ViewVoting = () => {
             <span>You have already voted</span>
           ) : (
             <button
-              onClick={sendVote}
+              onClick={() => vote && sendVote}
               className={`${styles.voteButton} ${isButtonDisabled()}`}
             >
               Vote
