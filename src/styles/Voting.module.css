@@ -1,0 +1,78 @@
+.votingContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 600px;
+  max-width: 95%;
+  margin: 0 auto;
+  margin-top: 16px;
+  border: 1px solid #0070f3;
+  border-radius: 8px;
+  padding: 16px;
+  min-height: 400px;
+}
+
+.title {
+  font-size: 32px;
+}
+
+.infoText {
+  font-size: 12px;
+  text-align: center;
+}
+
+.votingInfoContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+
+.votingInfo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.optionName {
+  font-style: italic;
+  font-size: 16px;
+}
+
+.dateContainer {
+  font-size: 12px;
+  font-style: oblique;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 4px;
+  margin-bottom: 16px;
+}
+
+.optionVotes {
+  min-width: 130px;
+  text-align: right;
+}
+
+.copyText {
+  width: 280px;
+  text-align: center;
+  display: block;
+  padding: 4px;
+  border: 1px solid #0070f3;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: auto;
+}
+
+.copyText:hover {
+  box-shadow: inset 0 0 0 1px #0070f3;
+}
+
+.backButton {
+  margin-top: auto;
+}

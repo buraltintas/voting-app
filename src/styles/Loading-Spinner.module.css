@@ -1,0 +1,29 @@
+.spinner {
+  display: inline-block;
+  margin: 0 auto;
+  margin-top: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spinner:after {
+  content: ' ';
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #0070f3;
+  border-color: #0070f3 transparent #0070f3 transparent;
+  animation: spinner 1.2s linear infinite;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

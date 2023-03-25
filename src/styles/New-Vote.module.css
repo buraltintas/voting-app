@@ -1,0 +1,132 @@
+.newVoteContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 600px;
+  max-width: 95%;
+  margin: 0 auto;
+  margin-top: 16px;
+  border: 1px solid #0070f3;
+  border-radius: 8px;
+  padding: 16px;
+  min-height: 400px;
+}
+
+.title {
+  font-size: 32px;
+}
+
+.infoText {
+  font-size: 14px;
+  text-align: center;
+}
+
+.inputContainer {
+  width: 100%;
+  position: relative;
+  margin: 24px 0;
+}
+
+.questionInput {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #0070f3;
+  border-radius: 8px;
+  font-size: 16px !important;
+}
+
+.inputCounter {
+  position: absolute;
+  right: 0;
+  bottom: -20px;
+  font-size: 12px;
+  color: #0071f3a9;
+}
+
+.questionInput::placeholder,
+.optionInput::placeholder {
+  opacity: 0.5;
+}
+
+.optonsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.options {
+  width: 100%;
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.deleteIcon {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.addOption {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.addButton {
+  width: 120px;
+  height: 28.5px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.addButton:hover {
+  border: 1px solid #0070f3;
+}
+
+.optionInput {
+  width: 100%;
+  padding: 4px;
+  border: 1px solid #0070f3;
+  border-radius: 8px;
+  font-size: 16px !important;
+}
+
+.startButton {
+  cursor: pointer;
+  margin-top: 24px;
+  background-color: #e6f1fe;
+  padding: 8px;
+  width: 100%;
+  border: 1px solid #004392;
+  border-radius: 8px;
+  font-size: 16px !important;
+  transition: all 0.3s;
+}
+
+.startButton:not(.disabled):hover {
+  border: 1px solid #e6f1fe;
+  background-color: #004392;
+  color: #e6f1fe;
+}
+
+.disabled {
+  user-select: none;
+  cursor: not-allowed;
+  pointer-events: stroke;
+}
+
+.backButton {
+  margin-top: 16px;
+}
