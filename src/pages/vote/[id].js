@@ -105,8 +105,8 @@ const ViewVoting = () => {
         );
       }
 
-      setLoading(false);
       router.push(`/view/${voting[0].id}`);
+      setLoading(false);
     } catch (err) {
       alert(err);
       setLoading(false);
@@ -149,7 +149,7 @@ const ViewVoting = () => {
             <span>You have already voted</span>
           ) : (
             <button
-              onClick={() => vote && sendVote}
+              onClick={() => vote && sendVote()}
               className={`${styles.voteButton} ${isButtonDisabled()}`}
             >
               Vote
