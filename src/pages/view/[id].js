@@ -102,7 +102,7 @@ const ViewVoting = () => {
           <span onClick={copyToClipboard} className={styles.copyText}>
             {copied ? 'Link copied' : 'Click here to copy the voting link'}
           </span>
-          <p hidden id='link'>{`http://localhost:3001/vote/${id}`}</p>
+          <p hidden id='link'>{`https://vote-for-me.netlify.app/vote/${id}`}</p>
           <Link className={styles.backButton} href='/'>
             Go Home
           </Link>
