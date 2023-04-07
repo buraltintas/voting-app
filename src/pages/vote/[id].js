@@ -12,7 +12,7 @@ import { useRouter } from 'next/router';
 import LoadingSpinner from '@/components/loading-spinner';
 import Link from 'next/link';
 
-const ViewVoting = () => {
+const Vote = () => {
   const db = getFirestore(app);
   const [loading, setLoading] = useState(true);
   const [voting, setVoting] = useState([]);
@@ -167,4 +167,4 @@ const ViewVoting = () => {
   );
 };
 
-export default ViewVoting;
+export default Vote;
