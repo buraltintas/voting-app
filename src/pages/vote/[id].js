@@ -97,7 +97,7 @@ const ViewVoting = () => {
 
       if (voted) {
         voted.push({ id: voting[0].id, question: voting[0].question });
-        localStorage.setItem('startedVotings', JSON.stringify(startedVotings));
+        localStorage.setItem('voted', JSON.stringify(voted));
       } else {
         localStorage.setItem(
           'voted',
